@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_dark">#FF0B1020</color>
+    <color name="bg_dark2">#FF151C3A</color>
+    <color name="bg_card">#FF161E38</color>
+    <color name="accent">#FF4F8CFF</color>
+    <color name="accent2">#FF7B3FE4</color>
+    <color name="text_primary">#FFFFFFFF</color>
+    <color name="text_secondary">#FFA6B0CF</color>
+    <color name="success">#FF34D399</color>
+    <color name="warning">#FFFBBF24</color>
+    <color name="danger">#FFF87171</color>
+    <color name="panel_bg">#EB10162A</color>
+    <color name="ic_launcher_background">#FF4F8CFF</color>
+</resources>

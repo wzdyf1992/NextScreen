@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="设备" app:iconSpaceReserved="false">
+        <EditTextPreference
+            app:dialogTitle="投屏设备名称（手机 / Mac 上显示的名称）"
+            app:iconSpaceReserved="false"
+            app:key="device_name"
+            app:title="投屏设备名称"
+            app:useSimpleSummaryProvider="true" />
+        <SwitchPreferenceCompat
+            app:defaultValue="false"
+            app:iconSpaceReserved="false"
+            app:key="boot_start"
+            app:summary="平板开机后自动开启投屏与屏幕镜像接收服务"
+            app:title="开机自动启动" />
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="AirPlay 屏幕镜像（Mac / iPhone / iPad）" app:iconSpaceReserved="false">
+        <SwitchPreferenceCompat
+            app:defaultValue="true"
+            app:iconSpaceReserved="false"
+            app:key="airplay_enabled"
+            app:summary="支持苹果屏幕镜像、Mac 无线扩展显示器及隔空播放投屏"
+            app:title="开启 AirPlay 接收" />
+        <ListPreference
+            app:defaultValue="auto"
+            app:dependency="airplay_enabled"
+            app:entries="@array/airplay_res_entries"
+            app:entryValues="@array/airplay_res_values"
+            app:iconSpaceReserved="false"
+            app:key="airplay_resolution"
+            app:title="镜像最高分辨率"
+            app:useSimpleSummaryProvider="true" />
+        <ListPreference
+            app:defaultValue="60"
+            app:dependency="airplay_enabled"
+            app:entries="@array/airplay_fps_entries"
+            app:entryValues="@array/airplay_fps_values"
+            app:iconSpaceReserved="false"
+            app:key="airplay_fps"
+            app:title="镜像最高帧率"
+            app:useSimpleSummaryProvider="true" />
+        <ListPreference
+            app:defaultValue="auto"
+            app:dependency="airplay_enabled"
+            app:entries="@array/airplay_h265_entries"
+            app:entryValues="@array/airplay_h265_values"
+            app:iconSpaceReserved="false"
+            app:key="airplay_h265"
+            app:title="视频编码偏好"
+            app:useSimpleSummaryProvider="true" />
+        <SwitchPreferenceCompat
+            app:defaultValue="false"
+            app:dependency="airplay_enabled"
+            app:iconSpaceReserved="false"
+            app:key="airplay_pin"
+            app:summary="开启后，新设备首次镜像需输入平板上显示的 4 位配对码"
+            app:title="连接需 PIN 配对验证" />
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="视频投屏播放" app:iconSpaceReserved="false">
+        <ListPreference
+            app:defaultValue="highest"
+            app:entries="@array/quality_entries"
+            app:entryValues="@array/quality_values"
+            app:iconSpaceReserved="false"
+            app:key="quality"
+            app:title="默认画质"
+            app:useSimpleSummaryProvider="true" />
+        <ListPreference
+            app:defaultValue="1.0"
+            app:entries="@array/speed_entries"
+            app:entryValues="@array/speed_values"
+            app:iconSpaceReserved="false"
+            app:key="speed"
+            app:title="播放倍速"
+            app:useSimpleSummaryProvider="true" />
+        <SwitchPreferenceCompat
+            app:defaultValue="true"
+            app:iconSpaceReserved="false"
+            app:key="remember_speed"
+            app:summary="在播放器中调整的倍速会保存，并自动应用到下一集"
+            app:title="连续播放保持倍速" />
+        <ListPreference
+            app:defaultValue="2.0"
+            app:entries="@array/long_press_entries"
+            app:entryValues="@array/long_press_values"
+            app:iconSpaceReserved="false"
+            app:key="long_press_speed"
+            app:title="长按屏幕临时加速"
+            app:useSimpleSummaryProvider="true" />
+        <ListPreference
+            app:defaultValue="fit"
+            app:entries="@array/resize_entries"
+            app:entryValues="@array/resize_values"
+            app:iconSpaceReserved="false"
+            app:key="resize_mode"
+            app:title="画面比例"
+            app:useSimpleSummaryProvider="true" />
+        <ListPreference
+            app:defaultValue="wait"
+            app:entries="@array/end_action_entries"
+            app:entryValues="@array/end_action_values"
+            app:iconSpaceReserved="false"
+            app:key="end_action"
+            app:title="一集播放结束后"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="权限与后台" app:iconSpaceReserved="false">
+        <Preference
+            app:iconSpaceReserved="false"
+            app:key="overlay"
+            app:title="后台自动弹出播放画面" />
+        <Preference
+            app:iconSpaceReserved="false"
+            app:key="battery"
+            app:title="忽略电池优化" />
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="关于" app:iconSpaceReserved="false">
+        <Preference
+            app:iconSpaceReserved="false"
+            app:key="about"
+            app:title="NextScreen" />
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="quality_entries">
+        <item>自动（根据网速切换）</item>
+        <item>最高画质</item>
+        <item>4K</item>
+        <item>1080P</item>
+        <item>720P</item>
+        <item>480P</item>
+    </string-array>
+    <string-array name="quality_values">
+        <item>auto</item>
+        <item>highest</item>
+        <item>2160</item>
+        <item>1080</item>
+        <item>720</item>
+        <item>480</item>
+    </string-array>
+
+    <string-array name="speed_entries">
+        <item>0.5x</item>
+        <item>0.75x</item>
+        <item>1.0x（正常）</item>
+        <item>1.25x</item>
+        <item>1.5x</item>
+        <item>1.75x</item>
+        <item>2.0x</item>
+        <item>2.5x</item>
+        <item>3.0x</item>
+    </string-array>
+    <string-array name="speed_values">
+        <item>0.5</item>
+        <item>0.75</item>
+        <item>1.0</item>
+        <item>1.25</item>
+        <item>1.5</item>
+        <item>1.75</item>
+        <item>2.0</item>
+        <item>2.5</item>
+        <item>3.0</item>
+    </string-array>
+
+    <string-array name="long_press_entries">
+        <item>1.5x</item>
+        <item>2.0x</item>
+        <item>3.0x</item>
+    </string-array>
+    <string-array name="long_press_values">
+        <item>1.5</item>
+        <item>2.0</item>
+        <item>3.0</item>
+    </string-array>
+
+    <string-array name="resize_entries">
+        <item>适应屏幕（保持比例）</item>
+        <item>拉伸铺满</item>
+        <item>裁剪铺满</item>
+    </string-array>
+    <string-array name="resize_values">
+        <item>fit</item>
+        <item>fill</item>
+        <item>zoom</item>
+    </string-array>
+
+    <string-array name="end_action_entries">
+        <item>停留在播放页，等待手机投送下一集</item>
+        <item>返回主页</item>
+    </string-array>
+    <string-array name="end_action_values">
+        <item>wait</item>
+        <item>close</item>
+    </string-array>
+
+    <string-array name="airplay_res_entries">
+        <item>自动（适配平板原生比例）</item>
+        <item>2K（2560 × 1440）</item>
+        <item>1080P（1920 × 1080）</item>
+        <item>720P（1280 × 720）</item>
+    </string-array>
+    <string-array name="airplay_res_values">
+        <item>auto</item>
+        <item>2560x1440</item>
+        <item>1920x1080</item>
+        <item>1280x720</item>
+    </string-array>
+
+    <string-array name="airplay_fps_entries">
+        <item>60 FPS（丝滑低延迟）</item>
+        <item>30 FPS（省电模式）</item>
+    </string-array>
+    <string-array name="airplay_fps_values">
+        <item>60</item>
+        <item>30</item>
+    </string-array>
+
+    <string-array name="airplay_h265_entries">
+        <item>自动（硬解支持时启用）</item>
+        <item>优先使用 HEVC (H.265)</item>
+        <item>仅使用 H.264（兼容性最佳）</item>
+    </string-array>
+    <string-array name="airplay_h265_values">
+        <item>auto</item>
+        <item>on</item>
+        <item>off</item>
+    </string-array>
+</resources>

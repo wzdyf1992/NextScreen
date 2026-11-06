@@ -1,0 +1,30 @@
+# Gradle & Kotlin build caches
+.gradle/
+.kotlin/
+build/
+app/build/
+
+# Android NDK / CMake build artifacts
+.cxx/
+app/.cxx/
+
+# Local SDK/NDK configuration
+local.properties
+
+# IDE files
+.idea/
+*.iml
+.vscode/
+
+# Packaged binaries & signing keys
+*.apk
+*.aab
+*.ap_
+*.dex
+*.jks
+*.keystore
+
+# OS metadata & temp files
+.DS_Store
+Thumbs.db
+*~
